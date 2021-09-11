@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
@@ -7,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="ua.nure.cpplab.MainController">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.nure.cpplab.controller.MainController">
   <tabs>
     <Tab text="Task 1.10">
       <content>
@@ -16,7 +17,7 @@
                   <VBox layoutX="98.0" layoutY="31.0" prefHeight="368.5" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <Label prefHeight="39.0" prefWidth="600.0" text="Создать &quot;треугольный&quot; массив из 10 строк и заполнить его биномиальными коэффициентами" />
-                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="208.0" text="Do demo" onAction="#showTask1Demo" />
+                        <Button mnemonicParsing="false" onAction="#showTask1Demo" text="Do demo" />
                      </children>
                   </VBox>
                </children></AnchorPane>
@@ -24,17 +25,49 @@
     </Tab>
     <Tab text="Task 2.3">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="14.0" layoutY="-59.0" prefHeight="368.5" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label prefHeight="232.0" prefWidth="615.0" text="Создать класс &quot;Матрица&quot;.&#10;Класс должен иметь следующие поля:&#10;1) двумерный массив вещественных чисел; 2) количество строк и столбцов в матрице.&#10;Класс должен иметь следующие методы: 1) сложение с другой матрицей;&#10;2) умножение на число;&#10;3) умножение на другую матрицу;&#10;4) транспонирование; 5) вывод на печать.Создать класс &quot;Матрица&quot;.&#10;Класс должен иметь следующие поля:&#10;1) двумерный массив вещественных чисел; 2) количество строк и столбцов в матрице.&#10;Класс должен иметь следующие методы: 1) сложение с другой матрицей;&#10;2) умножение на число;&#10;3) умножение на другую матрицу;&#10;4) транспонирование; 5) вывод на печать." textAlignment="JUSTIFY" />
+                        <Button mnemonicParsing="false" onAction="#showTask2Demo" text="Do task demo" />
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
       </content>
     </Tab>
       <Tab text="Task 3.2">
          <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="46.0" layoutY="62.0" prefHeight="368.5" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="Создать класс &quot;Очередь&quot;, основанный на циклическом массиве объектов.&#10;Возбуждать исключения при неудаче операций добавления и извлечения из очереди.&#10;Типы возбуждаемых исключений определить самому; в вызывющем коде предусмотреть&#10;их обработку.Создать класс &quot;Очередь&quot;, основанный на циклическом массиве объектов. &#10;Возбуждать исключения при неудаче операций добавления и извлечения из очереди. &#10;Типы возбуждаемых исключений определить самому; в вызывющем коде предусмотреть &#10;их обработку." />
+                        <Button mnemonicParsing="false" onAction="#showTask3Demo" text="Do task demo" />
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
          </content>
       </Tab>
       <Tab text="Task 4.4">
          <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="65.0" layoutY="73.0" prefHeight="368.5" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="591.0" text="Выполнить предыдущее задание, но так, чтобы вывести лишь имена файлов с&#10;расширениями java, class и txt.Через сериализацию" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" text="Do task demo" onAction="#showTask4Demo">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
          </content>
       </Tab>
   </tabs>

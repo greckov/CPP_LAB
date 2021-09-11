@@ -1,43 +1,24 @@
-package ua.nure.cpplab;
+package ua.nure.cpplab.controller;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
 
-public class Task1Controller {
+public class Task1Controller extends BaseTaskController {
     @FXML
     private Label drawnText;
 
     public static void display() throws IOException {
-        final var window = new Stage();
-
-        window.initModality(Modality.APPLICATION_MODAL);
-        window.setTitle("Task 1.10 demo");
-        window.setMinHeight(400);
-        window.setMinWidth(800);
-        window.setResizable(false);
-
-        final var fxmlLoader = new FXMLLoader(LabApplication.class.getResource("task1-view.fxml"));
-        final var scene = new Scene(fxmlLoader.load());
-        window.setScene(scene);
-        window.showAndWait();
+        displayInternal("Task 1.10", "task1-view.fxml");
     }
 
     public void initialize() {
         drawnText.setText(generateTriangle());
     }
 
-    @FXML
-    protected void onCloseClick(final ActionEvent event) {
-        ((Stage) drawnText.getScene().getWindow()).close();
-    }
-
+    @NotNull
     private String generateTriangle() {
         final var builder = new StringBuilder(100);
 
